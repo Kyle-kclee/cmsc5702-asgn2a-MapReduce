@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+ <meta name="description" content="Stanford Hospital is known worldwide for advanced treatment of complex disorders.  Part of Stanford University Medical Center with locations in Palo Alto & throughout the SF Bay Area."> 
+ <!-- InstanceBeginEditable name="doctitle" -->
+ <title>Stanford Hospital &amp; Clinics - Stanford Medicine</title>
+ <!-- InstanceEndEditable -->
+ <!-- BEGIN HEAD CODE -->
+ <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=770" />
+<script type="text/javascript" src="/Templates/yui-2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+<script type="text/javascript" src="/Templates/AC_RunActiveContent.js"></script>
+<script type="text/javascript" src="/Templates/swfobject.js"></script>
+ <!-- Use media="screen and (min-device-width: 481px)" to prevent uptake by iPhone -->
+ <link id="mainStyle" rel="stylesheet" type="text/css" href="/Templates/main_sm.css" />
+ <link id="iPhoneStyle" media="only screen and (max-device-width: 480px)" href="/Templates/iPhone.css" type="text/css" rel="stylesheet" />
+ <link rel="stylesheet" type="text/css" href="/Templates/stanfordhospital/styles.css" />
+ <script type="text/javascript" src="/Templates/stanfordhospital/siteparams.js"></script>
+ <script type="text/javascript" src="/Templates/basic_functions_sm.js"></script>
+ <script type="text/javascript" src="/Templates/webtrends.js"></script>
+ <link rel="stylesheet" type="text/css" media="print" href="/Templates/print.css" />
+ <!--[if IE]>
+ <link id="ieStyleTweak" rel="stylesheet" type="text/css" href="/Templates/stanfordhospital/ie_style_tweak.css" /> 
+ <![endif]-->
+ <!-- END HEAD CODE -->
+ 
+ <!-- InstanceBeginEditable name="head" -->
+ <!-- PUT SUPPLEMENTAL STYLES AND SCRIPTS HERE -->
+ <script type="text/javascript" src="/Templates/stanfordhospital/tracklinks.js"></script>
+ <script src="http://yui.yahooapis.com/3.0.0pr2/build/yui/yui-min.js" type="text/javascript"></script>
+ <script type="text/javascript">swfobject.registerObject("bannerFlash", "9.0.0");</script>
+ <script type="text/javascript" src="http://yui.yahooapis.com/combo?2.5.2/build/yahoo-dom-event/yahoo-dom-event.js&2.5.2/build/animation/animation-min.js"></script>
+ <script type="text/javascript" src="/Templates/ui/reader/reader.js"></script>
+ <script type="text/javascript" src="/includes/outgoing.js"></script>
+ <!--link rel="stylesheet" type="text/css" href="/Templates/ui/reader/reader.css" /-->
+ <script type="text/javascript">
+ /* <![CDATA[ */
+ SM.reader.create = function() {
+   var reader1 = new SM.reader.init({   
+ 		"elementId" : "reader",
+ 		"url" : "/Templates/newswire/published/SHC_News_main.json",
+ 		"category" : "shcn",
+ 		"numberOfItems" : 4,
+ 		"showFirstItem" : false, 
+ 		"shortTitles" : false
+   });
+ }
+ SM.addToInit(SM.reader.create);
+ /* ]]> */
+ </script>
+ <link rel="stylesheet" type="text/css" href="/Templates/ui/carousel/styles.css"> <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/element/element-min.js"></script> <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/animation/animation-min.js"></script> <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/connection/connection-min.js"></script> <script type="text/javascript" src="http://yui.yahooapis.com/2.7.0/build/carousel/carousel-min.js"></script>  <script type="text/javascript" src="/Templates/ui/carousel/fadeScript.js"></script> 
+ <style type="text/css">
+ @import url("/Templates/1col_tabs.css");
+ @import url("/Templates/stanfordhospital/shcHome3.css");
+ @import url("/Templates/ui/reader/reader.css");
+ @import url("/includes/ad.css");
+ #banner object {
+ 	left:-1px;
+ 	*left:0;
+ 	_left:0;
+ 	position:relative;
+ 	width:754px;
+ 	*width:750px;
+ 	_width:750px;
+ }
+ #mainContent #banner {
+ 	overflow:hidden;
+ 	width:750px;
+ }
+ #videoContainer2 {
+ 	border:2px solid #C5C5C5;
+ 	float:left;
+ 	margin:8px;
+ }
+ </style>
+ <script type="text/javascript">
+ /* <![CDATA[ */
+ 
+ YUI().use("YUI","node","event", function(Y) {
+ 
+ SM.helperText = function(el,helperTextString) {
+ 	var clearValue = function() {
+ 		var fldValue = this.get("value");
+ 		if (fldValue == helperTextString) { 
+ 			this.set("value","");
+ 		}
+ 	}
+ 	var restoreValue = function() {
+ 		var fldValue = this.get("value");
+ 		if (fldValue === "") { 
+ 			this.set("value",helperTextString);
+ 		}
+ 	}
+ 	this.fld = Y.get("#"+el);
+ 	this.fld.on("focus",clearValue);
+ 	this.fld.on("blur",restoreValue);
+ }
+ 
+ var validate = function(e) {
+ 	var fnVal = Y.get("#fn").get("value");
+ 	var lnVal = Y.get("#ln").get("value");
+ 	var eVal = Y.get("#e").get("value");
+ 	var err = "";
+ 	if (fnVal=="First Name" || fnVal=="") {
+ 		err += "* First name required.\n";
+ 	}
+ 	if (lnVal=="Last Name" || lnVal=="") {
+ 		err += "* Last name required.\n";
+ 	}
+ 	if (eVal=="Email" || eVal=="") {
+ 		err += "* Email required.\n";
+ 	}
+ 	if (err != "") { 
+ 		err = "\nPlease correct the following:\n" + err;
+ 		alert(err);
+ 		e.halt();
+ 	}
+ }
+ 
+ var init = function() {
+ 	var fnHelperText = new SM.helperText("fn","First Name");
+ 	var lnHelperText = new SM.helperText("ln","Last Name");
+ 	var eHelperText = new SM.helperText("e","Email");
+ 	Y.get("#newsletter").on("submit",validate);
+ }
+ 
+ Y.on("domready", init);
+ 
+ });
+ 
+ /* ]]> */
+ </script>
+ 
+ <!-- Resources needed for video container -->
+ 
+ <script type="text/javascript">
+ var videoVars = [{
+ 	videoDiv: "videoContainer2",
+ 	method: "streaming_yt",
+ 	videoFile: "http://www.youtube.com/watch=7bjh9HCo-dw",
+ 	videoWidth: 282,
+ 	videoHeight: 146,
+ 	autostart: "false",
+ 	controlbar: "over",
+ 	titlecard: "http://stanfordhospital.org/newsEvents/images/video-your-health-epilepsy.jpg",
+ 	moreFlashvars: [{
+ 		stretching: "fill",
+ 		icons: "false"
+ 	}]
+ }];
+ </script>
+ 
+ <script type="text/javascript" src="/Templates/ui/media/video/embed.js"></script>
+ <link rel="stylesheet" type="text/css" href="/Templates/ui/media/video/embed.css" />
+   
+ <!-- End resources needed for video container -->
+ 
+ <!-- InstanceEndEditable -->
+ </head>
+ <body>
+ <div id="container">
+   <!-- BEGIN TOPCODE --> <noscript><img alt="" class="nodisplay" border="0" name="DCSIMG" width="1" height="1" src="http://irt-sdc.stanford.edu/dcsnfwler000000ctuoyjwvpa_3t4d/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></noscript> <!-- Stanford Medicine emergency notices, if any, appear here; populates som and shc, unless overridden -->     <div id="brand" class="x_logo">
+   <a href="http://stanfordhospital.org/"><img src="/Templates/images/logo_header_shc2.gif" width="200" height="50" alt="Stanford Hospital &amp; Clinics" /></a>
+   <img src="/Templates/images/logo_header_shc_print.gif" width="1" height="1" alt="Stanford Hospital &amp; Clinics" class="printLogo" />
+ </div> <div id="brandedSiteName">
+ 	&nbsp;
+ </div>
+  <div id="search">   <form action="http://stanfordhospital.org/search/" method="get" name="searchform" id="searchform">     <input type="hidden" id="numgm" name="numgm" value="5" />     <input type="hidden" id="searchid" name="searchid" value="" />     <div id="searchBox">       <input id="q" name="q" type="text" size="12" value="Search Stanford Medical Sites" class="" />       <button class="searchSubmitButton" type="submit">Search</button>     </div>     <div id="searchExtras"><!-- optional links, search controls, etc. -->       <!-- as_oq value reflects site or sites to be searched on first button -->       <div id="searchControls">         <ul id="searchControlsList">           <li id="thisSiteOnly"><input type="radio" name="as_oq" id="as_oq_1" value="" /><label for="as_oq_1" id="as_oq_1_label">This Site Only</label></li>           <li id="allStanfordMedicine"><input type="radio" name="as_oq" id="as_oq_2" value="" checked="checked" /><label for="as_oq_2" id="as_oq_2_label">Stanford Medical Sites</label></li>         </ul>       </div>       <div id="searchLinks">         <ul id="searchLinksList">           <li id="waysToGive" class="x_firstChild"><a href="http://stanfordhospital.org/giving/">Ways to Give</a></li>           <li id="findAPerson"><a href="http://stanfordhospital.org/aboutUs/contact.html">Find a Person</a></li>         </ul>       </div>       <div id="searchLinksLong">         <ul id="searchLinksListLong">           <li class="firstChild"><a href="http://med.stanford.edu/alumni/">Alumni</a></li>           <li><a href="http://lane.stanford.edu/">Lane Library</a></li>           <li id="waysToGiveLong"><a href="http://stanfordhospital.org/aboutUs/gift.html">Ways to Give</a></li>           <li id="findAPersonLong"><a href="http://stanfordhospital.org/aboutUs/contact.html">Find a Person</a></li>         </ul>       </div>     </div>   </form> </div> <!-- END TOPCODE -->  
+   <div id="mainContent"><!-- InstanceBeginEditable name="MainColumn" -->
+     <div id="banner">
+       <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="750" height="183" id="bannerFlash">
+         <param name="movie" value="homeBannerNoThumbs.swf" />
+         <param name="wmode" value="transparent" />
+         <!--[if !IE]>-->
+         <object type="application/x-shockwave-flash" data="homeBannerNoThumbs.swf" width="750" height="183">
+           <param name="wmode" value="transparent" />
+           <!--<![endif]-->
+           <a href="http://stanfordhospital.org/newsEvents/newsReleases/2009/a-life-renewed.html"><img src="http://stanfordhospital.org/flashimages/flashbanner_nonflash.jpg" width="750" height="183" alt="A Life Renewed: One Man's Victory Over Cancer" /></a>
+           <!--[if !IE]>-->
+         </object>
+         <!--<![endif]-->
+       </object>
+     </div>		
+     <div id="primaryGroup">
+       <div id="section1">
+         <h1 class="howHelp">How May We Help You?</h1>
+         
+         <ul class="serviceList1">
+           <li><a href="http://stanfordhospital.org/profiles/stanfordhospital/frdActionServlet?choiceId=searchClinicalService" class="serviceButton"><span>Find a Physician</span> &raquo;</a></li>
+           <li><a href="forPatients/patientServices/"><span>Services for Guests</span> &raquo;</a></li>
+           <li><a href="forPatients/yourHospitalStay/"><span>Your Hospital Stay</span> &raquo;</a></li>
+           <li><a href="forPatients/clinicVisit.html"><span>Your Clinic Visit</span> &raquo;</a></li>
+         </ul>
+         
+         <ul class="serviceList2">
+           <li><a href="forPatients/requestAppt/" class="serviceButton"><span>Make Appointment</span> &raquo;</a></li>
+           <li><a href="directions/"><span>Maps &amp; Directions</span> &raquo;</a></li>
+           <li><a href="forPatients/visiting.html"><span>Visiting Hours</span> &raquo;</a></li>
+           <li><a href="forPatients/"><span>More</span> &raquo;</a></li>
+         </ul>
+         
+         <span class="dial911">Emergency? Please dial 9 1 1</span>
+       </div>
+     
+       <div id="section2">
+         <h2 class="forHealthPro">For Health Professionals</h2>
+       
+         <ul class="serviceList3">
+           <li><a href="forPhysiciansOthers/physicians/"><span>Stanford Physicians</span> &raquo;</a></li>
+           <li><a href="forPhysiciansOthers/physicians/referringPhysicians.html"><span>Referring Physicians</span> &raquo;</a></li>
+           <li><a href="forPhysiciansOthers/nurses/"><span>Nurses</span> &raquo;</a></li>
+         </ul>
+       </div>
+     </div>
+   
+     <div id="promo1">
+       <a href="http://healthlibrary.stanford.edu/"><img src="images/home/healthLibraryLogo.gif" height="56" width="104" alt="Stanford Health Library" class="libraryLogo" /></a>
+       <h3 class="accessible">Stanford Health Library</h3>
+       <p>The Library provides scientifically based medical information to help people make informed decisions about their health and health care. All services are free. <a href="http://healthlibrary.stanford.edu/" class="libraryLearn">Learn More <img src="images/home/arrowButton.png" height="21" width="21" alt="button" /></a></p>
+     </div>		
+ 
+ 
+ 
+ 
+ 	<div id="videoContainer">
+ 		<div id="videoContainer2"></div>
+ 	  <h3>Your Health: Epilepsy</h3>
+ 		<p>More than 200,000 people in the  U.S. are diagnosed with epilepsy every year, about 1 out of every 100. Robert  Fisher, MD, Director of Stanford's Epilepsy Center, explains the  different kinds of seizures that present in cases of epilepsy, as well as  factors contributing to the condition and current treatments available.<br />
+         </a></p>
+ <!--
+ <a href="">Full story &raquo;</a>
+ -->
+     </div>
+ 
+ 
+ 
+     
+ 		<div id="promo2">
+     	<h4 class="outpatientCenter">Outpatient Center</h4>
+       <p>The new Stanford Medicine Outpatient Center in Redwood City is now open.</p> 
+       <a href="http://outpatient.stanfordhospital.com">Visit the Center's Website <img src="images/home/arrowButton.png" height="21" width="21" alt="" /></a>
+     </div>
+     
+     <div id="news">
+     	<h4 class="newswire">Newswire</h4>
+   	  <a href="/newsEvents/" class="viewAll">View All News &raquo;</a>
+ 	    <div id="reader"></div>
+     </div>
+     
+     <div id="adContainer" class="sm-skin">
+       <ol id="carousel">
+ 
+         <li class="slide ad1">
+     		<h5>Join the Conversation</h5>
+             <div id="social-left">
+                 <p><a class="facebook" href="http://facebook.com/stanfordhospital" onclick="javascript: pageTracker._trackPageview('/outgoing/homepage_facebook');">Facebook</a></p>
+                 <p><a class="twitter" href="http://twitter.com/stanfordhosp" onclick="javascript: pageTracker._trackPageview('/outgoing/homepage_twitter');">Twitter</a></p>
+             </div>
+             <div id="social-right">
+                 <p><a class="youtube" href="http://youtube.com/stanfordhospital" onclick="javascript: pageTracker._trackPageview('/outgoing/homepage_youtube');">YouTube</a></p>
+                 <p><a class="scope" href="http://scopeblog.stanford.edu/" onclick="javascript: pageTracker._trackPageview('/outgoing/homepage_scope_blog');">Scope Blog</a></p>
+             </div>
+ 		</li>
+ 
+         <li class="slide ad2">
+           <h5>The New Stanford Hospital</h5>
+           <p>The new Stanford Hospital will provide the most advanced treatments in the world.</p>
+           <a href="http://www.stanfordpackard.org">Learn More <img src="images/home/arrowButton.png" height="21" width="21" alt="" /></a>
+         </li>
+ 
+ 		<!-- li class="slide ad3">
+           <h5>Stay afloat during the H1N1 crisis</h5>
+           <p>during the H1N1 crisis</p>
+           <a href="http://stanfordmedicine.org/flu/">Learn More<img src="images/home/arrowButton.png" height="21" width="21" alt="" /></a>
+ 		</li -->
+ 
+         <li class="slide ad4">
+           <h5>Report to the Community</h5>
+           <p>Learn more about Stanford<br /> Hospital &amp; Clinics today and <br />our vision for the future.</p>
+           <br /><a onclick="javascript: pageTracker._trackPageview('/outgoing/review_report_download')" href="2009YearInReview.pdf">View the Report <img src="/Templates/images/icon-pdf-doc.gif" height="15" width="15" alt="PDF Document" /></a></li>
+         </li>
+ 
+         <li class="slide ad5">
+           <h5>Discover SHC</h5>
+           <p>Sign up to receive news from Stanford Hospital &amp; Clinics</p>
+           <form id="newsletter" name="newsletter" method="post" action="http://med.stanford.edu/cgi-bin/formmail.pl">
+             <input type="hidden" name="redirect" value="http://www.stanfordhospital.org/newsEvents/newsThankYou.html" class="accessible" />
+             <input type="hidden" name="required" value="e" class="accessible" />
+             <input type="hidden" name="subject" value="Discover SHC Newsletter" class="accessible" />
+             <input type="hidden" name="recipient" value="communications@stanfordmed.org" class="accessible" />
+             <fieldset>
+               <input type="text" name="fn" id="fn" value="First Name" />
+               <input type="text" name="ln" id="ln" value="Last Name" />
+               <input type="text" name="e" id="e" value="Email" />
+               <input type="submit" id="submitButton" name="submit" title="Submit"  value="" />
+             </fieldset>
+           </form>
+         </li>
+ 
+         <li class="slide ad6">
+     		<h5>Join the Conversation</h5>
+             <div id="social-left">
+                 <p><a class="facebook" href="http://facebook.com/stanfordhospital" onclick="javascript: pageTracker._trackPageview('/outgoing/facebook_all');">Facebook</a></p>
+                 <p><a class="twitter" href="http://twitter.com/stanfordhosp" onclick="javascript: pageTracker._trackPageview('/outgoing/twitter_all');">Twitter</a></p>
+             </div>
+             <div id="social-right">
+                 <p><a class="youtube" href="http://youtube.com/stanfordhospital" onclick="javascript: pageTracker._trackPageview('/outgoing/youtube_all');">YouTube</a></p>
+                 <p><a class="scope" href="http://scopeblog.stanford.edu/" onclick="javascript: pageTracker._trackPageview('/outgoing/scope_all');">Scope Blog</a></p>
+             </div>
+ 		</li>
+ 
+       </ol>
+     </div>
+     <script type="text/javascript"
+ src="http://dnn506yrbagrg.cloudfront.net/pages/scripts/0011/0400.js">
+ </script>
+ 
+     <!--div id="promo3">
+       <h4 class="newHospital">The New Stanford Hospital</h4>
+       <p>The new Stanford Hospital will provide the most advanced treatments in the world.</p>
+       <a href="http://www.stanfordpackard.org">Learn More</a>
+     </div-->
+     
+    
+     <!-- InstanceEndEditable --></div>
+   <!-- BEGIN BOTTOMCODE --> <div id="nav">   <h4 class="nodisplay">Site Navigation:</h4>   <ul id="navList">     <li class="x_firstChild" id="tab01"><a href="http://stanfordhospital.org/clinicsmedServices/">Clinical Services</a>       <ul>         <li><a href="http://stanfordhospital.org/clinicsmedServices/">Overview</a></li>         <li><a href="http://stanfordhospital.org/AZGuide/">A-Z Guide to Clinical Services</a></li>         <li class="x_hasChildren"><a href="http://stanfordhospital.org/clinicsmedServices/COE/">Centers of Excellence</a>           <ul>             <li><a href="http://cancer.stanford.edu/">Stanford Cancer Center</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/COE/heart/">Heart Center</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/COE/neuro/">Neurosciences</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/COE/orthopaedics/">Orthopaedics</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/COE/surgicalServices/">Surgical Services</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/COE/transplant/">Transplantation</a></li>           </ul>         </li>         <li> <a href="http://stanfordhospital.org/clinicsmedServices/clinics/">Clinics</a></li>         <li><a href="http://stanfordhospital.org/clinicsmedServices/medicalServices/">Medical Services</a></li>         <li><a href="http://stanfordhospital.org/clinicsmedServices/requestAppt/">Request an Appointment</a></li>       </ul>     </li>     <li id="tab02"><a href="http://stanfordhospital.org/profiles/">Find a Physician</a></li>     <li id="tab03"><a href="http://stanfordhospital.org/quality/">Quality</a>       <ul>         <li><a href="http://stanfordhospital.org/quality/">Overview</a></li>         <li><a href="http://stanfordhospital.org/quality/awards.html">Awards &amp; Recognition</a></li>         <li><a href="http://stanfordhospital.org/quality/whatisquality/">What is Quality?</a></li>         <li><a href="http://stanfordhospital.org/quality/detailed_data/">Detailed Quality Data</a></li>         <li><a href="http://stanfordhospital.org/quality/leadership/">Department Leadership</a></li>       </ul>     </li>     <li id="tab04"><a href="http://stanfordhospital.org/healthLib/">Health Information</a>       <ul>         <li><a href="http://stanfordhospital.org/healthLib/">Overview</a></li>         <li><a href="http://healthlibrary.stanford.edu" target="_blank">Stanford Health Library</a></li>       </ul>     </li>     <li id="tab05"><a href="http://stanfordhospital.org/newsEvents/">News &amp; Events</a>       <ul>         <li><a href="http://stanfordhospital.org/newsEvents/">News Releases</a></li>         <li><a href="http://stanfordhospital.org/newsEvents/shc_in_news.html">SHC in the News</a> </li>         <li><a href="http://stanfordhospital.org/newsEvents/newsletters/discoverNewsletters.html">Discover Newsletters</a></li>         <li><a href="http://stanfordhospital.org/newsEvents/SocialMedia.html">Social Media</a></li>         <li><a href="http://stanfordhospital.org/newsEvents/eventsPublications.html">Events &amp; Publications</a></li>         <li><a href="http://stanfordhospital.org/newsEvents/video.html">Video Archive</a></li>       </ul>     </li>     <li id="tab06"><a href="http://stanfordhospital.org/directions/">Maps &amp; Directions</a>       <ul>         <li><a href="http://stanfordhospital.org/directions/">Driving &amp; Parking </a></li>         <li class="x_hasChildren"><a href="http://stanfordhospital.org/directions/maps/">Our Locations &amp; Maps </a>           <ul>             <li><a href="http://stanfordhospital.org/directions/maps/Arrillaga.html">Arrillaga Center for Sports &amp; Recreation</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/BW.html">Blake Wilbur Building</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/Boswell.html">Boswell Clinic</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/CVC.html">California VitreoRetinal Center - Menlo Park</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/SCC.html">Cancer Center</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/COEProfessionalDevelopment.html">Center for Education and Professional Development</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/HooverPavilion.html">Hoover Pavilion, Third Floor</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/LPCH.html">Lucile Packard Children's Hospital</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/MedicalPlaza.html">Medical Plaza (selected suites)</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/Psychiatry.html">Psychiatry Building</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/SleepClinic.html">Sleep Clinic - SF</a></li>             <li><a href="http://stanfordhospital.org/clinicsmedServices/medicalServices/imaging/locations/imaging.html">Stanford Medicine Imaging Center, Palo Alto</a></li>             <li><a href="http://outpatient.stanfordhospital.com">Stanford Medicine Outpatient Clinic, Redwood City</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/BCMV.html">Stanford University Blood Center, Mountain View</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/BCPA.html">Stanford Medical School Blood Center, Palo Alto</a></li>             <li><a href="http://www.stanfordlab.com/pages/pscmaps1.html">Stanford Clinical Labs (various locations)</a></li>             <li><a href="http://stanfordhospital.org/directions/maps/SHC.html">Stanford Hospital &amp; Clinics</a></li>             <li><a href="http://outpatient.stanfordhospital.com/directions/">Stanford Medicine Outpatient Clinic, Redwood City</a></li>           </ul>         </li>         <li><a href="http://stanfordhospital.org/directions/airport.html">Airport Information</a></li>         <li class="x_hasChildren"><a href="http://stanfordhospital.org/directions/publicTransport.html">Public Transportation</a>           <ul>             <li><a href="http://stanfordhospital.org/directions/ByBus.html">By Bus</a></li>             <li><a href="http://stanfordhospital.org/directions/ByTrain.html">By Train</a></li>           </ul>         </li>         <li class="x_hasChildren"><a href="http://stanfordhospital.org/directions/insideHospital.html">Inside the Hospital</a>           <ul>             <li><a href="http://stanfordhospital.org/directions/SHC_1.html">First Floor</a></li>             <li><a href="http://stanfordhospital.org/directions/SHC_2.html">Second Floor</a></li>             <li><a href="http://stanfordhospital.org/directions/SHC_3.html">Third Floor</a></li>             <li><a href="http://stanfordhospital.org/directions/SHC_g.html">Ground Floor (Basement)</a> </li>           </ul>         </li>         <li><a href="http://stanfordhospital.org/directions/emergencyroom.html">Emergency Department</a></li>         <li><a href="http://stanfordhospital.org/directions/forDisabled.html">For the Disabled</a> </li>       </ul>     </li>     <li id="tab07" class="x_lastChild" ><a href="http://stanfordhospital.org/aboutUs/">About Us</a>       <ul>         <li><a href="http://stanfordhospital.org/aboutUs/">Overview</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/Administration.html">Administration</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/clinicPhoneNumbers.html">Clinic Phone Numbers</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/contact.html">Contact Us</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/facts.html">Facts</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/faq.html">Frequently Asked Questions</a></li>         <li><a href="http://stanfordhospital.org/giving/">Make a Gift</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/communityPartnerships.html">Public Services &amp; Community Partnerships</a></li>         <li><a href="http://stanfordhospital.org/aboutUs/history.html">Our History</a></li>       </ul>     </li>   </ul> </div>  <div id="superheader"> 	<h4 class="nodisplay">Stanford Medicine Resources:</h4> 	<ul id="superheaderList"> 		<li id="stanfordMedicineBrand"><a href="http://stanfordmedicine.org/"><b>Stanford Medicine</b></a></li> 		<li id="sh_gettingCare"><a href="http://stanfordmedicine.org/getting_care/">Getting Care</a> <ul> 				 <li><a href="http://stanfordmedicine.org/getting_care/">Overview</a></li> 				 <li><a href="http://stanfordmedicine.org/getting_care/find_physician.html">Find a Physician</a></li> 				 <li><a href="http://stanfordmedicine.org/getting_care/fccc.html">Find a Clinical Care Center</a></li> 				 <li><a href="http://stanfordhospital.org/">Stanford Hospital &amp; Clinics</a></li> 				 <li><a href="http://www.lpch.org/">Lucile Packard Children's Hospital</a></li> 				 <li><a href="http://stanfordmedicine.org/getting_care/emergency.html">Emergency</a></li> 				 </ul> 		</li> <li id="sh_research"><a href="http://stanfordmedicine.org/research/">Research</a> <ul> 				<li><a href="http://stanfordmedicine.org/research/">Overview</a></li> 				<li><a href="http://med.stanford.edu/">School of Medicine</a></li> 				<li><a href="http://med.stanford.edu/research/">News &amp; Resources</a></li> 				<li><a href="http://med.stanford.edu/clinicaltrials/">Clinical Trials</a></li> 				<li><a href="http://med.stanford.edu/guide/">Departments, Institutes &amp; Centers</a></li> 				<li><a href="http://med.stanford.edu/profiles/">Faculty Profiles</a></li> 				</ul> 		</li> <li id="sh_education"><a href="http://stanfordmedicine.org/education_training/">Education &amp; Training</a> <ul> 				 <li><a href="http://stanfordmedicine.org/education_training/">Overview</a></li> 				 <li><a href="http://med.stanford.edu/">School of Medicine</a></li> 				 <li><a href="http://stanfordmedicine.org/education_training/programs.html">Programs</a></li> 				 <li><a href="http://med.stanford.edu/admissions/">Admissions</a></li> 				 <li><a href="http://med.stanford.edu/cme/">Continuing Medical Education</a></li> 				 <li><a href="http://med.stanford.edu/alumni/">Alumni</a></li> 				 <li><a href="http://lane.stanford.edu/">Lane Medical Library</a></li> 				 </ul> 		</li> <li id="sh_community"><a href="http://stanfordmedicine.org/community_connections/">Community</a> <ul> 				 <li><a href="http://stanfordmedicine.org/community_connections/">Overview</a></li> 				 <li><a href="http://healthlibrary.stanford.edu/">Stanford Health Library</a></li> 				 <li><a href="http://stanfordmedicine.org/communitynews/">Community Newsletter</a></li> 				 <li><a href="http://stanfordmedicine.org/community_connections/volunteering.html">Volunteering</a></li> 				 <li><a href="http://stanfordmedicine.org/community_connections/pscp.html">Public Service &amp; Community Partnerships</a></li> 				 <li><a href="http://stanfordmedicine.org/community_connections/rnbp.html">Renewal &amp; New Building Projects</a></li> 				 </ul> 		</li> <li id="sh_aboutUs"><a href="http://stanfordmedicine.org/about/">About Us</a> <ul> 				 <li><a href="http://stanfordmedicine.org/about/">Overview</a></li> 				 <li><a href="http://stanfordmedicine.org/about/news.html">News</a></li> 				 <li><a href="http://stanfordmedicine.org/about/careers.html">Careers</a></li> 				 <li><a href="http://stanfordmedicine.org/about/ways_to_give.html">Ways to Give</a></li> 				 <li><a href="http://stanfordmedicine.org/about/find_person.html">Find a Person</a></li> 				 <li><a href="http://stanfordmedicine.org/about/contact.html">Contact Us</a></li> 				 <li><a href="http://stanfordmedicine.org/about/maps_directions.html">Maps &amp; Directions</a></li> 				 <li><a href="http://deansnewsletter.stanford.edu/">The Dean's Newsletter</a></li> 	    </ul> 		</li> 	  <li id="stanfordUniversityBrand"><a href="http://www.stanford.edu/"><b>Stanford University</b></a></li>   </ul> </div> <div id="localFooter"> 	<h4 class="nodisplay">Footer Links:</h4> 	<ul id="localFooterList"> 		<li class="x_firstChild"><a href="http://stanfordhospital.org/employment/volunteering/">Volunteers</a></li> 		<li><a href="http://stanfordhospital.org/employment/jobs.html">Careers</a></li> 		<li><a href="http://stanfordhospital.org/overview/">Popular Pages</a></li> 		<li><a href="http://stanfordhospital.org/siteIndex/">Site Map</a></li> 		<li><a href="http://stanfordhospital.org/forPatients/patientPrivacy.html">Patient Privacy Policy</a></li> 	    <li><a href="http://stanfordhospital.org/legalDisclaimer.html">Legal Notices and Disclaimer</a></li> 	</ul> </div>  <!-- SMSTAGING Stanford Medicine version 1.0 2/17/09: copyright date -->  <div id="globalFooter">   <ul id="globalFooterList">     <li class="x_firstChild">&copy;<a href="http://stanfordhospital.org/"><span class="currentYear">2009</span> Stanford Hospital &amp; Clinics</a>. All rights reserved.</li>     <li class="x_lastChild"><a href="http://med.stanford.edu/irt/" id="irtLink">Powered by <span id="irtLogoTiny"><b>IRT</b></span></a></li>   </ul> </div> <!-- END BOTTOMCODE -->  
+ </div>
+ <script type="text/javascript">
+ var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+ </script>
+ <script type="text/javascript">
+ try {
+ var pageTracker = _gat._getTracker("UA-3631925-1");
+ pageTracker._trackPageview();
+ } catch(err) {}</script>
+ </body>
+ </html>
+ 
